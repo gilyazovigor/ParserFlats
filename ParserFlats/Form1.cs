@@ -22,15 +22,23 @@ namespace ParserFlats
         Workbook wb;
         Worksheet ws;
 
-        string cian_url_perm = "";
+        string cian_url_perm = "https://" +"perm.cian.ru/cat.php?deal_type=sale&" +
+            "engine_version=2&house_material%5B0%5D=1&house_material%5B1%5D=2&" +
+            "house_material%5B2%5D=3&max_house_year=2050&maxfloor=1000&maxfloorn=1000&" +
+            "maxtarea=1000&min_house_year=1901&minfloor=0&minfloorn=0&mintarea=0&" +
+            "offer_type=flat&quality=1&region=4927&room1=1&room2=1&room3=1&room4=1&room5=1";
 
-        string cian_url_ekat = "";
+        string cian_url_ekat = "https://" + "ekb.cian.ru/cat.php?deal_type=sale&" +
+            "engine_version=2&house_material%5B0%5D=1&house_material%5B1%5D=2&" +
+            "house_material%5B2%5D=3&max_house_year=2050&maxfloor=1000&maxfloorn=1000&" +
+            "maxtarea=1000&min_house_year=1901&minfloor=0&minfloorn=0&mintarea=0&" +
+            "offer_type=flat&quality=1&region=4743&room1=1&room2=1&room3=1&room4=1&room5=1";
 
         string cian_url_nn = "https://" + "nn.cian.ru/cat.php?deal_type=sale&" +
                 "engine_version=2&house_material%5B0%5D=1&house_material%5B1%5D=2&" +
                 "house_material%5B2%5D=3&max_house_year=2050&maxfloor=1000&maxfloorn=1000&" +
                 "maxtarea=1000&min_house_year=1901&minfloor=0&minfloorn=0&mintarea=0&" +
-                "offer_type=flat&region=4885&room1=1&room2=1";
+                "offer_type=flat&region=4885&room1=1&room2=1&room3=1&room4=1&room5=1";
 
         public Form1()
         {
