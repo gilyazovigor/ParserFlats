@@ -108,8 +108,8 @@ namespace ParserFlats
             ws.Cells[1, 2].Value2 = "х2 (комнат)";
             ws.Cells[1, 3].Value2 = "х3 (этаж)";
             ws.Cells[1, 4].Value2 = "х4 (кол этажей)";
-            ws.Cells[1, 5].Value2 = "х5 (долгота)";
-            ws.Cells[1, 6].Value2 = "х6 (широта)";
+            ws.Cells[1, 5].Value2 = "х5 (широта)";
+            ws.Cells[1, 6].Value2 = "х6 (долгота)";
             ws.Cells[1, 7].Value2 = "х7 (год постройки дома)";
             ws.Cells[1, 8].Value2 = "х8 (тип стен)";
             ws.Cells[1, 9].Value2 = "х9 (ставка реф)";
