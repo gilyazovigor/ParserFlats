@@ -17,7 +17,7 @@ namespace ParserFlats
     public partial class Form1 : Form
     {
         IWebDriver Browser;
-        string path = @"C:\курсовая\парсер недвижимость курсач\данные.xlsx";
+        string path = @"C:\курсовая\parser\данные.xlsx";
         _Application excel = new _Excel.Application();
         Workbook wb;
         Worksheet ws;
@@ -37,8 +37,8 @@ namespace ParserFlats
         string cian_url_nn = "https://" + "nn.cian.ru/cat.php?deal_type=sale&" +
                 "engine_version=2&house_material%5B0%5D=1&house_material%5B1%5D=2&" +
                 "house_material%5B2%5D=3&max_house_year=2050&maxfloor=1000&maxfloorn=1000&" +
-                "maxtarea=1000&min_house_year=1901&minfloor=0&minfloorn=0&mintarea=0&" +
-                "offer_type=flat&region=4885&room1=1&room2=1&room3=1&room4=1&room5=1";
+                "maxtarea=37&min_house_year=1901&minfloor=0&minfloorn=0&mintarea=0&" +
+                "offer_type=flat&region=4885&room1=1";
 
         public Form1()
         {
@@ -261,7 +261,7 @@ namespace ParserFlats
                     }
 
                     //добавление в текстовый элемент
-                    textBox1.AppendText(current_url + "\r\n");
+                    textBox1.AppendText(current_url + " " + i + " / " + page_number + "стр." + "\r\n");
 
 
                     //закрытие вкладки с текущим объявлением
@@ -274,7 +274,7 @@ namespace ParserFlats
 
             }
 
-            string new_path = @"C:\курсовая\парсер недвижимость курсач\данные " +
+            string new_path = @"C:\курсовая\parser\данные " +
                 DateTime.Now.ToString().Replace('/', '-').Replace(':', '-') + ".xlsx";
 
             //wb.Save();
